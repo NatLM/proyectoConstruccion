@@ -1,0 +1,132 @@
+
+body{
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-bg);
+  font-family: 'Inter', sans-serif;
+}
+
+main{
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  height: 500px;
+  width:800px;
+  border-radius: 1rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+}
+main .imagen-luzio{
+  background-image: url(./assets/LuzioDoctor.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+main .isesion{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  top: 50%;
+}
+
+input:invalid{
+  border: 2px solid rgb(92, 92, 92);
+}
+
+input:valid{
+  border: 2px solid black;
+}
+
+.namepage{
+  width: 250px;
+  height: 50px;
+  font-family: 'Josefin Sans';
+  font-weight: 550;
+  font-size: 60px;
+  line-height: 50px;
+}
+
+h1{
+  margin: 0;
+  font-size: 20px;
+}
+
+#form-isesion{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  width: 100%;
+  gap: 20px;
+}
+label{
+  text-align: left;
+  font-size: 15px;
+}
+input{
+  padding: 10px;
+  border-radius: 4px;
+  border: solid;
+  border-width: 1px;
+  width: 90%;
+}
+
+.botones{
+  display: flex;
+  flex-direction: row;
+  align-items: justify;
+  gap: 100%;
+}
+
+button{
+  display:flex;
+  align-items: center;
+  /* margin-right: 10px; */
+
+  padding: 10px;
+  border: solid;
+  border-width: 1px;
+  background-color: var(--verde-btn);
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn{
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.msgcontrasena{
+  font-size: 1rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+
+/* footer */
+
+
+/* Auto layout */
+footer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 100px;
+
+position: absolute;
+width: 1120px;
+height: 80px;
+left: 160px;
+top: 90%;
+}

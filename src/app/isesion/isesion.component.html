@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/app/isesion/isesion.component.css">
+    <title>Dr. Luzio</title>
+</head>
+
+<body>
+    <main class="target">
+
+        <section class="isesion">
+            <p class="namepage">Dr. Luzio</p>
+            <h1>Iniciar Sesión</h1>
+            <form id="form-isesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" placeholder="example@estudiantes.uv.mx" required>
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" required>
+            </form>
+            <div class="botones">
+            <!-- <a class="msgcontrasena">¿Has olvidado tu contraseña?</a> -->
+            <a routerLink="/registro">
+              <button class="btn" title="Registro">Registrarse</button>
+            </a>
+            <a routerLink="/home">
+              <button class="btn-verde" title="Home">Ingresar</button>
+              </a>
+          </div>
+        </section>
+        <div class="imagen-luzio"></div>
+    </main>
+
+    <footer class="links">
+      <div class="container">
+        <button class="btn btn-danger">
+          <i class="fa-brands fa-facebook" style="color: #015cf9;"></i>
+          Facebook
+        </button>
+      </div>
+      <div>
+        <button class="btn btn-danger">
+
+          Instagram
+        </button>
+      </div>
+      <div>
+        <button class="btn btn-danger">
+          <i class="fa-brands fa-twitter" style="color: #00a3f5;"></i>
+          Twitter
+        </button>
+      </div>
+    </footer>
+
+</body>
+<script src="/src/app/isesion/isesion.component.ts"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>

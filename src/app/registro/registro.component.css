@@ -1,0 +1,13 @@
+button{
+  display:flex;
+  align-items: center;
+  /* margin-right: 10px; */
+
+  padding: 10px;
+  border: solid;
+  border-width: 1px;
+  background-color: var(--verde-btn);
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
