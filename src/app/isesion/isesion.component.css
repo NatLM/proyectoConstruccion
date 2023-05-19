@@ -1,4 +1,3 @@
-
 body{
   height: 100vh;
   width: 100%;
@@ -7,14 +6,10 @@ body{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: var(--blue-bg);
   font-family: 'Inter', sans-serif;
 }
 
 main{
-  text-align: center;
-  position: absolute;
-  top: 5%;
   height: 500px;
   width:800px;
   border-radius: 1rem;
@@ -34,31 +29,38 @@ main .isesion{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   box-sizing: border-box;
   top: 50%;
 }
 
-input:invalid{
-  border: 2px solid rgb(92, 92, 92);
+.infoUsuario{
+  padding: 2rem 0;
+  width: 100%;
 }
 
-input:valid{
+input:invalid{
+  border: 1px solid rgb(92, 92, 92);
+}
+
+input:invalid:required{
   border: 2px solid black;
 }
 
+input:valid{
+  border: 1px solid black;
+}
+
 .namepage{
-  width: 250px;
-  height: 50px;
+  margin: 0;
   font-family: 'Josefin Sans';
   font-weight: 550;
-  font-size: 60px;
-  line-height: 50px;
+  font-size: 2rem;
 }
 
 h1{
   margin: 0;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 #form-isesion{
@@ -73,25 +75,24 @@ label{
   font-size: 15px;
 }
 input{
+  box-sizing: border-box;
   padding: 10px;
   border-radius: 4px;
   border: solid;
   border-width: 1px;
-  width: 90%;
+  width: 100%;
 }
 
 .botones{
   display: flex;
   flex-direction: row;
-  align-items: justify;
-  gap: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 button{
   display:flex;
   align-items: center;
-  /* margin-right: 10px; */
-
   padding: 10px;
   border: solid;
   border-width: 1px;
@@ -104,29 +105,47 @@ button{
 .btn{
   text-align: center;
   background-color: aliceblue;
+  }
+
+.btn-social{
+  border: none;
+  background-color:transparent;
 }
 
-.msgcontrasena{
-  font-size: 1rem;
-  margin-top: 2rem;
-  text-decoration: underline;
-}
 
 /* footer */
-
-
-/* Auto layout */
-footer{
+.footer{
 display: flex;
-flex-direction: row;
-justify-content: center;
+flex-direction:row;
 align-items: center;
-padding: 0px;
-gap: 100px;
-
-position: absolute;
-width: 1120px;
-height: 80px;
-left: 160px;
-top: 90%;
+justify-content: center;
+width: 100%;
+height: 1rem;
 }
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 0;
+  }
+  main .imagen-luzio{
+    grid-row: 1;
+  }
+  main .isesion{
+    box-sizing: border-box;
+    grid-row: 2;
+  }
+  main .isesion .infoUsuario{
+    justify-content: center;
+  }
+  main .isesion{
+    justify-content: center;
+  }
+}
+
+

@@ -19,8 +19,8 @@ body {
 }
 
 main {
-  height: 500px;
-  width: 800px;
+  height: 450px;
+  width: 600px;
   border-radius: 1rem;
   background-color: white;
   display: grid;
@@ -37,8 +37,8 @@ main .contenido {
 }
 
 main .imagen-luzio {
-  background-image: url(./assets/luzio.png);
-  background-size: auto;
+  background-image: url(./assets/luzio_test.jpg);
+  background-size: 110%;
   background-position: center;
   max-width: 100%;
   max-height: 100%;

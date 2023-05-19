@@ -15,6 +15,9 @@ import { HomeComponent } from './home/home.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
+import { TestFinalComponent } from './test-final/test-final.component';
+import { NavHomeComponent } from './nav-home/nav-home.component';
+import { SalirComponent } from './salir/salir.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { PreguntasComponent } from './preguntas/preguntas.component';
     HomeComponent,
     ComentariosComponent,
     PerfilComponent,
-    PreguntasComponent
+    PreguntasComponent,
+    TestFinalComponent,
+    NavHomeComponent,
+    SalirComponent
   ],
   imports: [ BrowserModule, AppRoutingModule ],
   providers: [appRoutingProviders],

@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
   --verde-btn: #83D84B;
-
+  --blue-bg: #0150AF;
+  --white:white;
 }
 
 body{
   margin: 0;
+  background-color: var(--blue-bg);
 }

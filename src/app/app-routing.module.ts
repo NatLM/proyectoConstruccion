@@ -5,6 +5,8 @@ import { IsesionComponent } from './isesion/isesion.component';
 import { RegistroComponent } from './registro/registro.component';
 import { TestComponent } from './test/test.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
+import { TestFinalComponent } from './test-final/test-final.component';
+import { NavHomeComponent } from './nav-home/nav-home.component';
 import { HomeComponent } from './home/home.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
@@ -13,12 +15,15 @@ import { ComentariosComponent } from './comentarios/comentarios.component';
 
 const routes: Routes = [
   {path:'',component:IsesionComponent},
+  {path:'isesion',component:IsesionComponent},
   {path:'registro',component:RegistroComponent},
   {path: 'test',component:TestComponent},
   {path: 'home',component:HomeComponent},
   {path: 'perfil', component:PerfilComponent},
   {path: 'comentarios',component:ComentariosComponent},
-  {path: 'preguntas', component:PreguntasComponent}
+  {path: 'preguntas', component:PreguntasComponent},
+  {path: 'test-final', component:TestFinalComponent},
+  {path: 'nav-home',component:NavHomeComponent}
 
 ];
 
