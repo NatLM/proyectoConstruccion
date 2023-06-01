@@ -1,5 +1,6 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
-import  {Preguntas}  from '../models/preguntas';
+import { Component, OnInit,ViewChild, ElementRef } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-preguntas',
@@ -7,6 +8,14 @@ import  {Preguntas}  from '../models/preguntas';
   styleUrls: ['./preguntas.component.css']
 })
 export class PreguntasComponent {
+
+
+  /* public isAllOption=false;
+
+  checkOption(){
+    const selecOption=document.querySelectorAll('input[type="radio"]:checked');
+    this.isAllOption=selecOption.length===10;
+  } */
 
 
 

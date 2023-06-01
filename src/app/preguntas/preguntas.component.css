@@ -38,7 +38,7 @@ main .contenido{
   align-items: flex-end;
 }
 
-button {
+#btn{
   background: rgb(3, 76, 140);
   color: white;
   border-radius: 5px;

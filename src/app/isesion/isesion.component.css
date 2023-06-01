@@ -102,10 +102,28 @@ button{
   cursor: pointer;
 }
 
-.btn{
+#btn{
+  height: 2.4rem;
+  width: 5rem;
+  display:flex;
+  align-items: center;
+  padding: 10px;
+  border: solid 1px;
+  background-color: var(--verde-btn);
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btnRegistro{
   text-align: center;
   background-color: aliceblue;
   }
+
+/* a{
+    text-decoration: none;
+  } */
 
 .btn-social{
   border: none;

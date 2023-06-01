@@ -13,23 +13,23 @@
 <body>
   <main>
     <div class="contenido">
-      <div class="preguntas" id="preguntas">
-        <form action="" id="formulario">
+      <div class="preguntas" id="preguntas" name="formulario">
+        <form action="/test-final" id="formulario" >
           <div class="pregunta1">
             <legend><span id="preguntaTexto"></span>
               1.¿Con qué frecuencia has sentido que no puedes manejar todas las cosas que tienes que hacer?
             </legend>
               <br>
-            <input type="radio" id="nunca1" name="opcion1" value="nunca" required/>
+            <input type="radio" id="nunca1" name="opcion" value="nunca" required/>
             <label for="nunca1">Nunca</label>
               <br>
-            <input type="radio" id="ocasional1" name="opcion1" value="ocasional" required/>
+            <input type="radio" id="ocasional1" name="opcion" value="ocasional" required/>
             <label for="ocasional1">Ocasionalmente</label>
               <br>
-            <input type="radio" id="general1" name="opcion1" value="general" required/>
+            <input type="radio" id="general1" name="opcion" value="general" required/>
             <label for="general1">Generalmente</label>
               <br>
-            <input type="radio" id="siempre1" name="opcion1" value="siempre" required/>
+            <input type="radio" id="siempre1" name="opcion" value="siempre" required/>
             <label for="siempre1">Siempre</label>
               <br>
           </div>
@@ -204,11 +204,30 @@
             <label for="siempre10">Siempre</label>
               <br>
           </div>
+          <br>
+          <input type="submit" id="btn" name="btn" value="Siguiente">
         </form>
-        <br>
-        <a routerLink="/test-final">
-        <button id="siguiente" onclick="siguiente()">Siguiente</button>
-        </a>
+        <script>
+          (function(){
+            var formulario = document.getElementsByName('formulario')[0],
+            elementos = formulario.elements,
+            boton = document.getElementById('siguiente');
+
+            var validarRadio = function(e){
+              if(formulario.opcion.checked == true){
+              } else{
+                alert('Debe seleccionar una opción');
+                e.preventDefault();
+              }
+            };
+
+            var validar = function(e){
+              validarRadio(e);
+            };
+
+            formulario.addEventListener("submit",validar);
+          })
+        </script>
       </div>
     </div>
   </main>

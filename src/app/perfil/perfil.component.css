@@ -13,18 +13,18 @@ body{
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
   padding: 5%;
-  padding-left: 20%;
+  padding-left: 25%;
 }
 
 main .contenedor{
   box-sizing: border-box;
   background-color: #B6D6FC;
-  border-radius: 10px;
-  width: 80%;
+  border-radius: 2rem;
+  width: 70%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 40px;
+  padding: 1rem;
 }
 
 .up{
@@ -42,7 +42,6 @@ main .contenedor{
 
 .up h3{
   font-size: 1.5rem;
-  /* justify-content: left; */
 }
 
 ul{
@@ -52,20 +51,34 @@ ul{
   list-style: none;
 }
 ul li{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .btn-back{
 display: flex;
 flex-direction: row;
 justify-content: left;
-padding-left: 20%;
-
+padding-left: 25%;
 }
 
-a{
-  text-decoration: none;
-}
 a:link, :visited, :hover, :active{
   color: black;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px){
+  .box{
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  main .contenedor{
+    width: 100%;
+    padding: 20px;
+  }
+  .btn-back{
+    padding-left: 0;
+    justify-content: center;
+  }
 }

@@ -9,3 +9,6 @@ body{
   margin: 0;
   background-color: var(--blue-bg);
 }
+a{
+  text-decoration: none;
+}
